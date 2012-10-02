@@ -21,9 +21,10 @@ Notes
 * plugins are in ./bundle directory
 * plugins configuration are in ./config/plugin.vim
 * plugins are .git submodules from github.com. Run:
+
     git submodule status
     git submodule update
-    
+
 to view submodules status and update them
   
 Used scripts/code from
