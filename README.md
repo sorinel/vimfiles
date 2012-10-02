@@ -21,9 +21,10 @@ Notes
 * pathogen plugin in used. To add/remove a plugin add/remove the plugin to ./bundle directory
 * plugins are in ./bundle directory
 * plugins configuration are in ./config/plugin.vim
-* plugins are .git submodules from github.com. 
 
 Run:
+=======
+* plugins are .git submodules from github.com. Run:
 
     git submodule status
     git submodule update
