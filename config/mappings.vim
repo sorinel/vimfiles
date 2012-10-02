@@ -11,6 +11,11 @@ imap  <2-MiddleMouse>  <Nop>
 imap  <3-MiddleMouse>  <Nop>
 imap  <4-MiddleMouse>  <Nop>
 
+"mapping romanian keyboard key § to `
+map § `
+map! § `
+map ± ~
+map! ± ~
 
 """""""""" macvim
 if has("gui_macvim")
@@ -103,12 +108,17 @@ ino <C-space> <C-p>
 ino ,.        <C-p>
 
 """"""""""
+""to make autocompletion(expansions) more friendly
 inoremap <expr> <Esc>      pumvisible() ? "\<C-e>" : "\<Esc>"
 inoremap <expr> <CR>       pumvisible() ? "\<C-y>" : "\<CR>"
 inoremap <expr> <Down>     pumvisible() ? "\<C-n>" : "\<Down>"
 inoremap <expr> <Up>       pumvisible() ? "\<C-p>" : "\<Up>"
 inoremap <expr> <PageDown> pumvisible() ? "\<PageDown>\<C-p>\<C-n>" : "\<PageDown>"
 inoremap <expr> <PageUp>   pumvisible() ? "\<PageUp>\<C-p>\<C-n>" : "\<PageUp>"
+
+"""""""""" I love having two control keys instead of two alts
+ino          <M-space>         <C-p>
+ino          <M-r>             <C-r>
 
 """""""""" <3 _
 " helpers to use _ like a word boundary
@@ -141,7 +151,4 @@ ino          <D-o>             <C-o>o
 ino          <D-CR>            <C-o>O
 ino          <D-O>             <C-o>O
 
-"""""""""" I love having two control keys instead of two alts
-ino          <M-space>         <C-p>
-ino          <M-r>             <C-r>
 

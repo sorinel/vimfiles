@@ -32,21 +32,22 @@ let html_use_css = 1
 
 """""""""""" Command-T from mislav
 " paste lines from unnamed register and fix indentation
-nmap <leader>p pV`]=
-nmap <leader>P PV`]=
 
-map <leader>gv :CommandTFlush<cr>\|:CommandT app/views<cr>
-map <leader>gc :CommandTFlush<cr>\|:CommandT app/controllers<cr>
-map <leader>gm :CommandTFlush<cr>\|:CommandT app/models<cr>
-map <leader>gh :CommandTFlush<cr>\|:CommandT app/helpers<cr>
-map <leader>gl :CommandTFlush<cr>\|:CommandT lib<cr>
-map <leader>gf :CommandTFlush<cr>\|:CommandT features<cr>
-map <leader>gg :topleft 100 :split Gemfile<cr>
-map <leader>f :CommandTFlush<cr>\|:CommandT<cr>
-" http://vimcasts.org/e/14
-cnoremap %% <C-R>=expand('%:h').'/'<cr>
-map <leader>F :CommandTFlush<cr>\|:CommandT %%<cr>
-map <leader>t :CommandT<cr>
+" nmap <leader>p pV`]=
+" nmap <leader>P PV`]=
+
+" map <leader>gv :CommandTFlush<cr>\|:CommandT app/views<cr>
+" map <leader>gc :CommandTFlush<cr>\|:CommandT app/controllers<cr>
+" map <leader>gm :CommandTFlush<cr>\|:CommandT app/models<cr>
+" map <leader>gh :CommandTFlush<cr>\|:CommandT app/helpers<cr>
+" map <leader>gl :CommandTFlush<cr>\|:CommandT lib<cr>
+" map <leader>gf :CommandTFlush<cr>\|:CommandT features<cr>
+" map <leader>gg :topleft 100 :split Gemfile<cr>
+map <D-t> :CommandT<cr>
+" " http://vimcasts.org/e/14
+" cnoremap %% <C-R>=expand('%:h').'/'<cr>
+" map <leader>F :CommandTFlush<cr>\|:CommandT %%<cr>
+" map <leader>t :CommandT<cr>
 
 let g:CommandTMaxHeight=10
 let g:CommandTMinHeight=4
@@ -62,6 +63,6 @@ hi MBENormal guifg=#808080 guibg=fg
 
 
 "NerdTree
-map <F12> <ESC>:NERDTreeToggle<CR>
-map! <F12> <ESC>:NERDTreeToggle<CR>
+map 0 <ESC>:NERDTreeToggle<CR>
+map! 0 <ESC>:NERDTreeToggle<CR>
 
