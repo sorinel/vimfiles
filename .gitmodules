@@ -23,3 +23,6 @@ url = https://github.com/scrooloose/nerdtree
 path = bundle/snipmate.vim
 url = git://github.com/msanders/snipmate.vim.git
 
+[submodule "bundle/vim-markdown"]
+	path = bundle/vim-markdown
+	url = https://github.com/tpope/vim-markdown
