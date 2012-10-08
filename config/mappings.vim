@@ -151,4 +151,4 @@ ino          <D-o>             <C-o>o
 ino          <D-CR>            <C-o>O
 ino          <D-O>             <C-o>O
 
-
+nn <D-w>  :bwipeout<CR>

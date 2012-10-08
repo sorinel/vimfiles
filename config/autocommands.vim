@@ -7,8 +7,8 @@ function! OnVimEnter()
     " set fuoptions=maxvert,maxhorz
     " macvim height calculation bug, forcing lines manually
     set fuoptions=maxhorz
-    set fullscreen
-    set lines=100
+    " set fullscreen
+    " set lines=100
     " set columns=500
   endif
 endfunction

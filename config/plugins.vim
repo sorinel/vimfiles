@@ -63,6 +63,6 @@ hi MBENormal guifg=#808080 guibg=fg
 
 
 "NerdTree
-map 0 <ESC>:NERDTreeToggle<CR>
-map! 0 <ESC>:NERDTreeToggle<CR>
+nn 0 <ESC>:NERDTreeToggle<CR>
+"noremap! 0 <ESC>:NERDTreeToggle<CR>
 
